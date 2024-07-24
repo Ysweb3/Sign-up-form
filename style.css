@@ -1,0 +1,38 @@
+body, html{
+    height: 100%;
+    margin: 0;  
+}
+p{
+    margin: 0;
+}
+.img-form-container{
+ 
+}
+.img-side{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    background-image: url(img/danila-rassokhin-Zw0HhCiUdlc-unsplash.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 100%;
+    
+}
+.form-container{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+form{
+    font-size: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    height: auto;
+    min-height: 800px;
+    min-width: 600px;
+}
+.form-lable{
+
+}
