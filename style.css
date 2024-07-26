@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols+2&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@font-face {
+    font-family: "Norse-Bold";
+    src: url(fonts/Norse-Bold\ \(1\).otf);
+}
 *{
     font-family: "Poppins","Arial";
     padding: 0px;
@@ -37,7 +40,6 @@ h6{
 
 
 .img-side{
-    
     float: left;
     background-image: url(img/danila-rassokhin-Zw0HhCiUdlc-unsplash.jpg);
     background-size:cover;
@@ -52,12 +54,24 @@ h6{
    flex-wrap: wrap;
 }
 
-input[type=text]{
+input[type=text], input[type=email], input[type=number], input[type=password]{
     height: 25px;
     width: 250px;
     font-size: 15px;
     padding: 2px;
+    border: 2px solid;
+    border-color:rgb(137, 134, 134);
+    border-radius: 5px;
 
+
+}
+input[type=email]:invalid, input[type=number]:invalid, input[type=password]:invalid{
+    border-color: rgb(189, 60, 60);
+
+}
+input[type=text]:focus, input[type=email]:focus, input[type=number]:focus, input[type=password]:focus{
+    border-color: rgb(59, 79, 119);
+    box-shadow: 0px 5px 5px 0px rgb(0 0 0 / 20%);
 }
 .form-content{
     display: flex;
@@ -88,7 +102,7 @@ label,input{
     margin-left: 60px;
     height: 50px;
     width: 200px;
-    font-size: 15px;
+    font-size: 17px;
     color: azure;
     font-weight: 600;
     background-color: rgb(92, 168, 15);
@@ -99,12 +113,23 @@ label,input{
 .submit-button:hover{
     background-color: rgba(70, 129, 12, 0.871);
     cursor: pointer;
-
 }
 .submit-button:active{
-    transform: scale(1.01);
+    transform:  translateY(4px);
 }
 .login{
-    margin-left: 33%;
+    margin-left: 33.3%;
     font-size: 15.5px;
+}
+.side-content{
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    background-color: rgba(127, 127, 127, 0.242);
+    margin-top: 15%;
+}
+.odin{
+    font-family: "Norse-Bold","sans-serif";
+    color: white;
+    font-size: 95px;
 }
